@@ -40,11 +40,11 @@ if(p==null){
 <html>
 	<head>
 	    <meta charset="UTF-8">
-	    <title>Modifica Persona</title>
+	    <title><% if(p.getId()!=0){ %>Modifica<%}else{ %>Aggiungi<% } %> Persona</title>
 	    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 	</head>
 	<body>
-	    <h1 class="text-center text-danger"><% if(p.getId()!=0){ %>Modifica <%}else{ %> Aggiungi <% } %> Persona</h1>
+	    <h1 class="text-center text-danger"><% if(p.getId()!=0){%>Modifica<%}else{ %>Aggiungi<% } %> Persona</h1>
 	    <form action="editor.jsp" class="text-center mx-auto" style="width: 50%;" method="post">
 	        <input class="form-control" type="hidden" name="idToEditdb" value="<%= p.getId() %>" required>
 	        <label class="form-label">Nome:</label>

@@ -56,7 +56,7 @@
 			</div>
 			<div class="form-group">
                 <label for="dbpassword">Password:</label>	                
-                <input class="form-control" type="password" name="dbpassword" id="dbpassword" value="rubrica" required>	                
+                <input class="form-control" type="password" name="dbpassword" id="dbpassword" required>	                
                    <input type="checkbox" class="form-check-input" id="showPassword" onclick="togglePassword()">
                    <label class="form-check-label" for="showPassword">Mostra Password</label> 
 	  		</div>
